@@ -1,23 +1,17 @@
 function toggleMenu() {
-    let sidebar = document.getElementById("sidebar");
-
-    if (sidebar.style.right === "0px") {
-        sidebar.style.right = "-100%";
-    } else {
-        sidebar.style.right = "0";
-    }
+  let sidebar = document.getElementById("sidebar");
+  sidebar.style.right = sidebar.style.right === "0px" ? "-100%" : "0";
 }
 
-// CHART
-const ctx = document.getElementById('chart');
-
-new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ["00", "04", "08", "12", "16", "20"],
-        datasets: [{
-            label: "AQI",
-            data: [35, 32, 48, 55, 42, 38],
-        }]
-    }
+new Chart(document.getElementById("chart"), {
+  type: "line",
+  data: {
+    labels: ["00","04","08","12","16","20"],
+    datasets: [{
+      data: [35,30,50,55,42,38],
+      borderColor: "#22c55e",
+      tension: 0.4,
+      fill: true
+    }]
+  }
 });
