@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prabhava Systems Pvt Ltd</title>
+<link rel="stylesheet" href="style.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">PRABHAVA</div>
+    <div class="menu" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- SIDEBAR MENU -->
+<div id="sidebar">
+    <span class="close" onclick="toggleMenu()">✖</span>
+    <a href="#">Home</a>
+    <a href="#mission">About</a>
+    <a href="#platform">Platform</a>
+    <a href="#dashboard">Dashboard</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Smart Air Quality Monitoring for Healthier Cities</h1>
+    <p>Advanced real-time environmental data for sustainable urban living.</p>
+
+    <div class="buttons">
+        <button class="primary">Get Started</button>
+        <button class="secondary">View Live Data</button>
+    </div>
+</section>
+
+<!-- AQI CARD -->
+<section class="aqi-card">
+    <h3>AQI INDEX</h3>
+    <h1>97</h1>
+    <p>Moderate</p>
+</section>
+
+<!-- MISSION -->
+<section id="mission">
+    <h2>Our Mission</h2>
+    <p>
+        PRABHAVA SYSTEMS PRIVATE LIMITED is developing an advanced air quality monitoring ecosystem.
+        The system deploys monitoring devices across cities to collect environmental data and transmit it
+        to a centralized monitoring platform.
+    </p>
+</section>
+
+<!-- PLATFORM -->
+<section id="platform">
+    <h2>The Connectivity Platform</h2>
+    <p>
+        Devices send real-time AQI data and SOS alerts to a centralized system,
+        enabling government authorities to monitor pollution and respond instantly.
+    </p>
+</section>
+
+<!-- DASHBOARD -->
+<section id="dashboard">
+    <h2>Live Air Quality Status</h2>
+
+    <div class="card">PM2.5: 12.4 µg/m³</div>
+    <div class="card">PM10: 24.8 µg/m³</div>
+
+    <canvas id="chart"></canvas>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+    <h2>Our Leadership Team</h2>
+
+    <div class="team-card">
+        <img src="images/shree.jpg">
+        <h3>Shree Vinayak Praveen</h3>
+        <p>CEO & Co-Founder</p>
+    </div>
+
+    <div class="team-card">
+        <img src="images/nishi.jpg">
+        <h3>Nishi Gautam</h3>
+        <p>Founder & COO</p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Email">
+    <textarea placeholder="Message"></textarea>
+    <button>Send</button>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
